@@ -26,9 +26,16 @@ element.textContent=currentPlayer;
 for(const condition of conditions){
     const[a,b,c]=condition;
     if(cells[a]&&cells[a]===cells[b]&&cells[a]===cells[c]){
-        re
+        result.textContent=`${currentPlayer} wins!`;
+        btns.foreach((btn)=>btn.disabled=true);
+        return;
     }
 }
+if(!cells.includes("")){
+    result.textContent=`It\'s a draw!`;
+    return;
+}
+currentPlayer=currentPlayer==='X'?'O':'X';
 
     /*
     **Part 1: Winning Conditions (Add your code here)**
