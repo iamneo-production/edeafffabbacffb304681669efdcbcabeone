@@ -35,6 +35,18 @@ body {
   width:75px;
   height:75px;
   text-align: center;
-  fon
+  font-size: 50px;
+  font-weight: 500;
+  background-color: aliceblue;
+  color:black;
+  text-shadow: 1px 1px 1px black;
+}
+.btn:hover{
+  background-color: azure;
+  cursor: pointer;
+}
+.btn.enabled{
+  background-color: black;
+  
 }
 
