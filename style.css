@@ -6,6 +6,14 @@
 }
 header{
     background-color: aqua;
-    width=30%;
+    width:30%;
 }
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:35px 35px 35px 35px;
+}
+
 
