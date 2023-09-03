@@ -36,6 +36,7 @@ if(!cells.includes("")){
     return;
 }
 currentPlayer=currentPlayer==='X'?'O':'X';
+result.textContent=`Current Player:${currentPlayer}`;
 
     /*
     **Part 1: Winning Conditions (Add your code here)**
@@ -74,6 +75,14 @@ const resetGame = () => {
 
     // Your code to re-enable buttons
     // ...
+
+    cells = ['', '', '', '', '', '', '', '', ''];
+    currentPlayer='X';
+    result.textContent='';
+    btns.forEach((btn)=>{
+        btn.textContent='';
+        btn.disabled=false;
+    });
 };
 
 btns.forEach((btn, i) => {
